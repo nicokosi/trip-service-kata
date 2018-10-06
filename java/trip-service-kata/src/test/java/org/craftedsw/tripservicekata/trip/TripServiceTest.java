@@ -22,6 +22,7 @@ public class TripServiceTest {
     @Before
     public void setUp() {
         friend.addFriend(userWithFriend);
+        notAFriend.addFriend(new User());
     }
 
     @Test(expected = UserNotLoggedInException.class)
